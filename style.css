@@ -667,19 +667,7 @@ input, textarea, select {
     position: relative;
 }
 
-/* Mask to cover original cut-off Pazartesi tag in image */
-.performer-card-1-mask {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    width: 150px;
-    height: 65px;
-    background: linear-gradient(135deg, rgba(16, 11, 8, 0.98) 50%, rgba(16, 11, 8, 0) 100%);
-    z-index: 4;
-    border-top-right-radius: 20px;
-    filter: blur(4px); /* Fuzzes out the borders so it is completely unnoticeable */
-    pointer-events: none;
-}
+
 
 /* Crisp centered HTML day badge overlay */
 .performer-html-badge {
