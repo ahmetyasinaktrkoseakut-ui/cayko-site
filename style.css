@@ -670,13 +670,14 @@ input, textarea, select {
 /* Mask to cover original cut-off Pazartesi tag in image */
 .performer-card-1-mask {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 160px;
+    top: -5px;
+    right: -5px;
+    width: 150px;
     height: 65px;
-    background: #0d0a08; /* Matches the dark stage ceiling precisely */
+    background: linear-gradient(135deg, rgba(16, 11, 8, 0.98) 50%, rgba(16, 11, 8, 0) 100%);
     z-index: 4;
     border-top-right-radius: 20px;
+    filter: blur(4px); /* Fuzzes out the borders so it is completely unnoticeable */
     pointer-events: none;
 }
 
@@ -1544,9 +1545,10 @@ input, textarea, select {
         font-size: 1.6rem;
     }
     
-    /* Performers height mobile */
+    /* Performers height mobile - Perfect Square to Show Full Day & Name Ribbons */
     .performer-img-container {
-        height: 340px;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
     
     .contact-card-full {
